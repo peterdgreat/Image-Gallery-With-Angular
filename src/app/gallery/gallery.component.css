@@ -1,0 +1,23 @@
+.head{
+  padding-top: 60px;
+  font-weight: 400;
+
+}
+img{
+  width: 200px;
+  height: 160px;
+}
+ul{
+  padding: 0;
+  width: 1200px;
+  margin: 20px auto;
+
+}
+li{
+  display: inline;
+}
+.tbn{
+  margin: 6px;
+  border: 4px solid #eee;
+  box-shadow:#555 1px 1px 8px 1px;
+}

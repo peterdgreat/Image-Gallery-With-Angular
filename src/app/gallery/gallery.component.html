@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="head">
+  <h3>
+    {{title}}
+  </h3>
+  </div>
+  <div class="row">
+    <button class="btn btn-lg btn-info" [class.active]="filterBy=='all'" (click)="filterBy='all'">All</button>
+    <button class="btn btn-lg btn-info" [class.active]="filterBy=='inndoor'" (click)="filterBy='indoor'">Indoor</button>
+    <button class="btn btn-lg btn-info" [class.active]="filterBy=='outdoor'" (click)="filterBy='outdoor'">Outdoor</button>
+    <button class="btn btn-lg btn-info" [class.active]="filterBy=='silo'" (click)="filterBy='silo'">Silo</button>
+    <ul >
+      <li *ngFor="let image of (images | filter:filterBy) ">
+        <img class="tbn" src="{{image.url}}" alt="">
+      </li>
+    </ul>
+  </div>
+
+</div>
